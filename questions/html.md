@@ -1,4 +1,4 @@
-Html Questions
+HTML Questions
 ==============
 
 **What does a doctype do?**
