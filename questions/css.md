@@ -21,4 +21,19 @@ In web design elements with `float` css-property are just like images in print l
 
 Floated elements can be used to make column layout or horizontal navigation bar.
 
-You have to aware parent collapsing problem. If element contains nothing but floated elements it's height will equal zero. 
+You have to aware parent collapsing problem. If element contains nothing but floated elements it's height will equal zero. To prevent this case you should clear floating.
+
+Methods to clear floats:
+
+- You can apply `clear: both;` property to element;
+- Empty div method is adding `<div style="clear: both;"></div>`. Sometimes developers add `<br/>` tag instead of div, but `<div>` has no side-effects and has no browser default styling;
+- Add `overflow: auto` or `overflow: hidden` to parent element to clear flow context. That method can add unwanted scroll-bars or hide some elements;
+- CSS pseudo `:after` element: 
+```css
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}```
