@@ -18,3 +18,7 @@ Normalizing is preserving useful defaults rather then "unstyling" everything. It
 To understand **float** purpose we can look at print design. In a print layout images may be set the page such that text wraps around them as needed.
 
 In web design elements with `float` css-property are just like images in print layout. Floated elements *remain a part of the flow of the web page*. It's not like elements with absolute position, they are **removed** from web page flow. Absolutely positioned page elements don't affect the position of other elements.
+
+Floated elements can be used to make column layout or horizontal navigation bar.
+
+You have to aware parent collapsing problem. If element contains nothing but floated elements it's height will equal zero. 
