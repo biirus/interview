@@ -36,4 +36,13 @@ Methods to clear floats:
    display: block; 
    height: 0; 
    clear: both;
-}```
+}
+```
+
+**Describe z-index and how stacking context is formed.**
+
+This property represents the position of the element along the z-axis. It's like several layers one above another.
+
+`z-index: 1;` can be integer value (positive or negative) or `auto`. It can be applied to elements with `position: absolute` (relative, fixed). Elements with higher `z-index` will be above another elements with lower `z-index` or without this property.
+
+You should remember the stacking context. It means the hierarchy of stacking context
