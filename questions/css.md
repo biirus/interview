@@ -60,3 +60,11 @@ A BFC can be created by one of this methods:
 - `display: inline-block; /* table-cell, table-caption */`.
 - `overflow` other than `visible`.
 - `display: flex; /* inline-flex */`.
+
+BFC is important in positioning and clearing floats.
+
+**Explain CSS sprites, and how you would implement them on a page or site.**
+
+CSS-Sprite is method to combine multiple images into one. It reduces the query count, loads many images once, can reduce image size.
+
+To use sprites on the page you can play with `backgroud-position:` property. You should increase or decrease **x** or **y** image offset. Usually you have to set `background-repeat: no-repeat;`.
