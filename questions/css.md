@@ -45,4 +45,5 @@ This property represents the position of the element along the z-axis. It's like
 
 `z-index: 1;` can be integer value (positive or negative) or `auto`. It can be applied to elements with `position: absolute` (relative, fixed). Elements with higher `z-index` will be above another elements with lower `z-index` or without this property.
 
-You should remember the stacking context. It means the hierarchy of stacking context
+You should remember the stacking context. It means the hierarchy of stacking context is a subset of hierarchy of HTML elements, because only certain elements can create stacking contexts. If element doesn't create it's own stacking context it will be assimilated by the parent stacking context.
+![stacking context](https://developer.mozilla.org/@api/deki/files/913/=Understanding_zindex_04.png)
