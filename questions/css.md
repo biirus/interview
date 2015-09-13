@@ -25,9 +25,9 @@ You have to aware parent collapsing problem. If element contains nothing but flo
 
 Methods to clear floats:
 
-- You can apply `clear: both;` property to element;
-- Empty div method is adding `<div style="clear: both;"></div>`. Sometimes developers add `<br/>` tag instead of div, but `<div>` has no side-effects and has no browser default styling;
-- Add `overflow: auto` or `overflow: hidden` to parent element to create own block format context. That method can add unwanted scroll-bars or hide some elements;
+- You can apply `clear: both;` property to element.
+- Empty div method is adding `<div style="clear: both;"></div>`. Sometimes developers add `<br/>` tag instead of div, but `<div>` has no side-effects and has no browser default styling.
+- Add `overflow: auto` or `overflow: hidden` to parent element to create own block format context. That method can add unwanted scroll-bars or hide some elements.
 - CSS pseudo `:after` element: 
 ```css
 .clearfix:after { 
