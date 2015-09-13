@@ -14,6 +14,7 @@ I feel myself a wizard or even a God =). If I want to make snowflakes fall botto
 
 Now I'm trying to write some components library for our project. I think it should be based on React and Webpack. It allows us to make independent chunks of code, which can be easily include on any page or script.
 
+
 **What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?**
 
 It's a hard question.
