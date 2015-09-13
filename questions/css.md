@@ -51,3 +51,12 @@ You should remember the stacking context. It means the hierarchy of stacking con
 **Describe BFC(Block Formatting Context) and how it works.**
 
 A block formatting context is a part of a visual CSS rendering of a web page. It is a region in which the layout of block boxes occurs and in which floating elements interact with each other.
+
+A BFC can be created by one of this methods:
+
+- the root element or something contains it.
+- floats.
+- `position: absolute; /* fixed */`.
+- `display: inline-block; /* table-cell, table-caption */`.
+- `overflow` other than `visible`.
+- `display: flex; /* inline-flex */`.
