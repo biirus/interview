@@ -27,7 +27,7 @@ Methods to clear floats:
 
 - You can apply `clear: both;` property to element.
 - Empty div method is adding `<div style="clear: both;"></div>`. Sometimes developers add `<br/>` tag instead of div, but `<div>` has no side-effects and has no browser default styling.
-- Add `overflow: auto` or `overflow: hidden` to parent element to create own block format context. That method can add unwanted scroll-bars or hide some elements.
+- Add `overflow: auto` or `overflow: hidden` to parent element to create own block formatting context. That method can add unwanted scroll-bars or hide some elements.
 - CSS pseudo `:after` element: 
 ```css
 .clearfix:after { 
@@ -47,3 +47,7 @@ This property represents the position of the element along the z-axis. It's like
 
 You should remember the stacking context. It means the hierarchy of stacking context is a subset of hierarchy of HTML elements, because only certain elements can create stacking contexts. If element doesn't create it's own stacking context it will be assimilated by the parent stacking context.
 ![stacking context](https://developer.mozilla.org/@api/deki/files/913/=Understanding_zindex_04.png)
+
+**Describe BFC(Block Formatting Context) and how it works.**
+
+A block formatting context is a part of a visual CSS rendering of a web page. It is a region in which the layout of block boxes occurs and in which floating elements interact with each other.
