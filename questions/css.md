@@ -12,3 +12,9 @@ Normalizing is preserving useful defaults rather then "unstyling" everything. It
 - display settings for HTML5 elements;
 - font inheritance for form element;
 - font-size rendering for `pre` element;
+
+**Describe Floats and how they work.**
+
+To understand **float** purpose we can look at print design. In a print layout images may be set the page such that text wraps around them as needed.
+
+In web design elements with `float` css-property are just like images in print layout. Floated elements *remain a part of the flow of the web page*. It's not like elements with absolute position, they are **removed** from web page flow. Absolutely positioned page elements don't affect the position of other elements.
