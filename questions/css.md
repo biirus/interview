@@ -68,3 +68,13 @@ BFC is important in positioning and clearing floats.
 CSS-Sprite is method to combine multiple images into one. It reduces the query count, loads many images once, can reduce image size.
 
 To use sprites on the page you can play with `backgroud-position:` property. You should increase or decrease **x** or **y** image offset. Usually you have to set `background-repeat: no-repeat;`.
+
+**How would you approach fixing browser-specific styling issues?**
+
+Usually I apply some hacks on it. You can read more about it on the site [browserhacks.com](http://browserhacks.com).
+
+**How do you serve your pages for feature-constrained browsers?**
+
+Sometimes I'm using vendor prefixes and trying to gather all those code into separate file (ex: ie8.css). 
+
+I prefer to use gracefull degradation
