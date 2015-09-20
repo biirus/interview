@@ -77,4 +77,23 @@ Usually I apply some hacks on it. You can read more about it on the site [browse
 
 Sometimes I'm using vendor prefixes and trying to gather all those code into separate file (ex: ie8.css). 
 
-I prefer to use gracefull degradation
+I prefer to use graceful degradation, that's why I'm making pages for modern browsers and then adding some styles for older ones.
+
+**What are the different ways to visually hide content (and make it available only for screen readers)?**
+
+There are a lot of techniques: 
+- use `text-indent: -999999px;`  (some huge number)
+- use `height: 0; overflow: hidden;` for element containing text
+- ...
+
+There is a good article about CSS Image Replacement on [css-tricks.com](https://css-tricks.com/css-image-replacement/).
+
+**Have you ever used a grid system, and if so, what do you prefer?**
+
+Yep, I used grid system and a lot. More often I made a deal with Twitter Bootstrap. 
+
+Grid systems make my life easier when I'm creating web page. It allows me quickly make markup with columns, sidebars etc.
+
+**Have you used or implemented media queries or mobile specific layouts/CSS?**
+
+Well, media query is a good thing to specify css rules only to some window width (height...). I used it for making responsive pages, that display well in desktop and mobile browsers.
